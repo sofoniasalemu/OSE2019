@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 
 # libtoolT - Provide generalized library-building support services.
 # Generated automatically by  (GNU ipopt 3.12.5)
@@ -44,10 +44,10 @@ available_tags=" CXX F77"
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host simon-ThinkPad-T450s:
+# Libtool was configured on host midway2-login2.rcc.local:
 
 # Shell to use when invoking shell scripts.
-SHELL="/bin/bash"
+SHELL="/bin/sh"
 
 # Whether or not to build shared libraries.
 build_libtool_libs=yes
@@ -97,13 +97,13 @@ with_gcc=yes
 EGREP="grep -E"
 
 # The linker used to build libraries.
-LD="/usr/bin/ld -m elf_x86_64"
+LD="/bin/ld -m elf_x86_64"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm -B"
+NM="/bin/nm -B"
 
 # A symbol stripping program
 STRIP="strip"
@@ -325,10 +325,10 @@ variables_saved_for_relink="PATH LD_LIBRARY_PATH LD_RUN_PATH GCC_EXEC_PREFIX COM
 link_all_deplibs=unknown
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=" /usr/lib/gcc/x86_64-linux-gnu/5/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/5/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/../lib/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/5/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/ /lib/x86_64-linux-gnu/5/ /lib/x86_64-linux-gnu/ /lib/../lib/ /usr/lib/x86_64-linux-gnu/5/ /usr/lib/x86_64-linux-gnu/ /usr/lib/../lib/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../ /lib/ /usr/lib/"
+sys_lib_search_path_spec=" /software/slurm-current-el7-x86_64/lib64/x86_64-redhat-linux/4.8.5/ /software/slurm-current-el7-x86_64/lib64/../lib64/ /software/slurm-current-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/slurm-current-el7-x86_64/lib/../lib64/ /software/python-2.7.12-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/python-2.7.12-el7-x86_64/lib/../lib64/ /software/openmpi-2.0.1-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/openmpi-2.0.1-el7-x86_64/lib/../lib64/ /software/cuda-8.0-el7-x86_64/extras/CUPTI/lib64/x86_64-redhat-linux/4.8.5/ /software/cuda-8.0-el7-x86_64/extras/CUPTI/lib64/../lib64/ /usr/lib64/nvidia/x86_64-redhat-linux/4.8.5/ /usr/lib64/nvidia/../lib64/ /software/cuda-8.0-el7-x86_64/lib64/x86_64-redhat-linux/4.8.5/ /software/cuda-8.0-el7-x86_64/lib64/../lib64/ /software/intel/parallel_studio_xe_2016_update3/mkl/lib/intel64/x86_64-redhat-linux/4.8.5/ /software/intel/parallel_studio_xe_2016_update3/mkl/lib/intel64/../lib64/ /software/git-2.10-el7-x86_64/lib64/x86_64-redhat-linux/4.8.5/ /software/git-2.10-el7-x86_64/lib64/../lib64/ /software/subversion-1.9.4-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/subversion-1.9.4-el7-x86_64/lib/../lib64/ /software/serf-1.3.9-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/serf-1.3.9-el7-x86_64/lib/../lib64/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/lib/x86_64-redhat-linux/4.8.5/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/lib/../lib64/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../x86_64-redhat-linux/4.8.5/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/ /lib/x86_64-redhat-linux/4.8.5/ /lib/../lib64/ /usr/lib/x86_64-redhat-linux/4.8.5/ /usr/lib/../lib64/ /software/slurm-current-el7-x86_64/lib64/ /software/slurm-current-el7-x86_64/lib/ /software/python-2.7.12-el7-x86_64/lib/ /software/openmpi-2.0.1-el7-x86_64/lib/ /software/cuda-8.0-el7-x86_64/extras/CUPTI/lib64/ /usr/lib64/nvidia/ /software/cuda-8.0-el7-x86_64/lib64/ /software/intel/parallel_studio_xe_2016_update3/mkl/lib/intel64/ /software/git-2.10-el7-x86_64/lib64/ /software/subversion-1.9.4-el7-x86_64/lib/ /software/serf-1.3.9-el7-x86_64/lib/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/lib/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../ /lib/ /usr/lib/"
 
 # Run-time system search path for libraries
-sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/x86_64-linux-gnu/libfakeroot /lib/i386-linux-gnu /usr/lib/i386-linux-gnu /lib/i686-linux-gnu /usr/lib/i686-linux-gnu /usr/lib/i386-linux-gnu/mesa /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/mesa-egl /usr/lib/x86_64-linux-gnu/mesa "
+sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib64/atlas /usr/lib64/mysql /usr/lib64/qt-3.3/lib /opt/Symantec/symantec_antivirus "
 
 # Fix the shell variable $srcfile for the compiler.
 fix_srcfile_path=""
@@ -7215,10 +7215,10 @@ disable_libs=static
 # End:
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
-# Libtool was configured on host simon-ThinkPad-T450s:
+# Libtool was configured on host midway2-login2.rcc.local:
 
 # Shell to use when invoking shell scripts.
-SHELL="/bin/bash"
+SHELL="/bin/sh"
 
 # Whether or not to build shared libraries.
 build_libtool_libs=yes
@@ -7268,13 +7268,13 @@ with_gcc=yes
 EGREP="grep -E"
 
 # The linker used to build libraries.
-LD="/usr/bin/ld -m elf_x86_64"
+LD="/bin/ld -m elf_x86_64"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm -B"
+NM="/bin/nm -B"
 
 # A symbol stripping program
 STRIP="strip"
@@ -7342,7 +7342,7 @@ dlopen_self=unknown
 dlopen_self_static=unknown
 
 # Compiler flag to prevent dynamic linking.
-link_static_flag="-static"
+link_static_flag=""
 
 # Compiler flag to turn off builtin functions.
 no_builtin_flag=" -fno-builtin"
@@ -7397,11 +7397,11 @@ striplib="strip --strip-unneeded"
 
 # Dependencies to place before the objects being linked to create a
 # shared library.
-predep_objects="/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbeginS.o"
+predep_objects="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbeginS.o"
 
 # Dependencies to place after the objects being linked to create a
 # shared library.
-postdep_objects="/usr/lib/gcc/x86_64-linux-gnu/5/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o"
+postdep_objects="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o"
 
 # Dependencies to place before the objects being linked to create a
 # shared library.
@@ -7413,7 +7413,7 @@ postdeps="-lstdc++ -lm -lgcc_s -lc -lgcc_s"
 
 # The library search path used internally by the compiler when linking
 # a shared library.
-compiler_lib_search_path="-L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.."
+compiler_lib_search_path="-L/software/slurm-current-el7-x86_64/lib64/../lib64 -L/software/slurm-current-el7-x86_64/lib/../lib64 -L/software/python-2.7.12-el7-x86_64/lib/../lib64 -L/software/openmpi-2.0.1-el7-x86_64/lib/../lib64 -L/software/cuda-8.0-el7-x86_64/extras/CUPTI/lib64/../lib64 -L/software/cuda-8.0-el7-x86_64/lib64/../lib64 -L/software/git-2.10-el7-x86_64/lib64/../lib64 -L/software/subversion-1.9.4-el7-x86_64/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/software/slurm-current-el7-x86_64/lib64 -L/software/slurm-current-el7-x86_64/lib -L/software/python-2.7.12-el7-x86_64/lib -L/software/openmpi-2.0.1-el7-x86_64/lib -L/software/cuda-8.0-el7-x86_64/extras/CUPTI/lib64 -L/software/cuda-8.0-el7-x86_64/lib64 -L/software/intel/parallel_studio_xe_2016_update3/mkl/lib/intel64 -L/software/git-2.10-el7-x86_64/lib64 -L/software/subversion-1.9.4-el7-x86_64/lib -L/software/serf-1.3.9-el7-x86_64/lib -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.."
 
 # Method to check whether dependent libraries are shared objects.
 deplibs_check_method="pass_all"
@@ -7493,10 +7493,10 @@ variables_saved_for_relink="PATH LD_LIBRARY_PATH LD_RUN_PATH GCC_EXEC_PREFIX COM
 link_all_deplibs=unknown
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=" /usr/lib/gcc/x86_64-linux-gnu/5/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/5/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/../lib/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/5/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/ /lib/x86_64-linux-gnu/5/ /lib/x86_64-linux-gnu/ /lib/../lib/ /usr/lib/x86_64-linux-gnu/5/ /usr/lib/x86_64-linux-gnu/ /usr/lib/../lib/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../ /lib/ /usr/lib/"
+sys_lib_search_path_spec=" /software/slurm-current-el7-x86_64/lib64/x86_64-redhat-linux/4.8.5/ /software/slurm-current-el7-x86_64/lib64/../lib64/ /software/slurm-current-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/slurm-current-el7-x86_64/lib/../lib64/ /software/python-2.7.12-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/python-2.7.12-el7-x86_64/lib/../lib64/ /software/openmpi-2.0.1-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/openmpi-2.0.1-el7-x86_64/lib/../lib64/ /software/cuda-8.0-el7-x86_64/extras/CUPTI/lib64/x86_64-redhat-linux/4.8.5/ /software/cuda-8.0-el7-x86_64/extras/CUPTI/lib64/../lib64/ /usr/lib64/nvidia/x86_64-redhat-linux/4.8.5/ /usr/lib64/nvidia/../lib64/ /software/cuda-8.0-el7-x86_64/lib64/x86_64-redhat-linux/4.8.5/ /software/cuda-8.0-el7-x86_64/lib64/../lib64/ /software/intel/parallel_studio_xe_2016_update3/mkl/lib/intel64/x86_64-redhat-linux/4.8.5/ /software/intel/parallel_studio_xe_2016_update3/mkl/lib/intel64/../lib64/ /software/git-2.10-el7-x86_64/lib64/x86_64-redhat-linux/4.8.5/ /software/git-2.10-el7-x86_64/lib64/../lib64/ /software/subversion-1.9.4-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/subversion-1.9.4-el7-x86_64/lib/../lib64/ /software/serf-1.3.9-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/serf-1.3.9-el7-x86_64/lib/../lib64/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/lib/x86_64-redhat-linux/4.8.5/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/lib/../lib64/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../x86_64-redhat-linux/4.8.5/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/ /lib/x86_64-redhat-linux/4.8.5/ /lib/../lib64/ /usr/lib/x86_64-redhat-linux/4.8.5/ /usr/lib/../lib64/ /software/slurm-current-el7-x86_64/lib64/ /software/slurm-current-el7-x86_64/lib/ /software/python-2.7.12-el7-x86_64/lib/ /software/openmpi-2.0.1-el7-x86_64/lib/ /software/cuda-8.0-el7-x86_64/extras/CUPTI/lib64/ /usr/lib64/nvidia/ /software/cuda-8.0-el7-x86_64/lib64/ /software/intel/parallel_studio_xe_2016_update3/mkl/lib/intel64/ /software/git-2.10-el7-x86_64/lib64/ /software/subversion-1.9.4-el7-x86_64/lib/ /software/serf-1.3.9-el7-x86_64/lib/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/lib/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../ /lib/ /usr/lib/"
 
 # Run-time system search path for libraries
-sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/x86_64-linux-gnu/libfakeroot /lib/i386-linux-gnu /usr/lib/i386-linux-gnu /lib/i686-linux-gnu /usr/lib/i686-linux-gnu /usr/lib/i386-linux-gnu/mesa /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/mesa-egl /usr/lib/x86_64-linux-gnu/mesa "
+sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib64/atlas /usr/lib64/mysql /usr/lib64/qt-3.3/lib /opt/Symantec/symantec_antivirus "
 
 # Fix the shell variable $srcfile for the compiler.
 fix_srcfile_path=""
@@ -7520,10 +7520,10 @@ include_expsyms=""
 
 # ### BEGIN LIBTOOL TAG CONFIG: F77
 
-# Libtool was configured on host simon-ThinkPad-T450s:
+# Libtool was configured on host midway2-login2.rcc.local:
 
 # Shell to use when invoking shell scripts.
-SHELL="/bin/bash"
+SHELL="/bin/sh"
 
 # Whether or not to build shared libraries.
 build_libtool_libs=yes
@@ -7573,13 +7573,13 @@ with_gcc=yes
 EGREP="grep -E"
 
 # The linker used to build libraries.
-LD="/usr/bin/ld -m elf_x86_64"
+LD="/bin/ld -m elf_x86_64"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm -B"
+NM="/bin/nm -B"
 
 # A symbol stripping program
 STRIP="strip"
@@ -7647,7 +7647,7 @@ dlopen_self=unknown
 dlopen_self_static=unknown
 
 # Compiler flag to prevent dynamic linking.
-link_static_flag="-static"
+link_static_flag=""
 
 # Compiler flag to turn off builtin functions.
 no_builtin_flag=""
@@ -7801,10 +7801,10 @@ variables_saved_for_relink="PATH LD_LIBRARY_PATH LD_RUN_PATH GCC_EXEC_PREFIX COM
 link_all_deplibs=unknown
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=" /usr/lib/gcc/x86_64-linux-gnu/5/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/5/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/../lib/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/5/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/ /lib/x86_64-linux-gnu/5/ /lib/x86_64-linux-gnu/ /lib/../lib/ /usr/lib/x86_64-linux-gnu/5/ /usr/lib/x86_64-linux-gnu/ /usr/lib/../lib/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../../x86_64-linux-gnu/lib/ /usr/lib/gcc/x86_64-linux-gnu/5/../../../ /lib/ /usr/lib/"
+sys_lib_search_path_spec=" /software/slurm-current-el7-x86_64/lib64/x86_64-redhat-linux/4.8.5/ /software/slurm-current-el7-x86_64/lib64/../lib64/ /software/slurm-current-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/slurm-current-el7-x86_64/lib/../lib64/ /software/python-2.7.12-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/python-2.7.12-el7-x86_64/lib/../lib64/ /software/openmpi-2.0.1-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/openmpi-2.0.1-el7-x86_64/lib/../lib64/ /software/cuda-8.0-el7-x86_64/extras/CUPTI/lib64/x86_64-redhat-linux/4.8.5/ /software/cuda-8.0-el7-x86_64/extras/CUPTI/lib64/../lib64/ /usr/lib64/nvidia/x86_64-redhat-linux/4.8.5/ /usr/lib64/nvidia/../lib64/ /software/cuda-8.0-el7-x86_64/lib64/x86_64-redhat-linux/4.8.5/ /software/cuda-8.0-el7-x86_64/lib64/../lib64/ /software/intel/parallel_studio_xe_2016_update3/mkl/lib/intel64/x86_64-redhat-linux/4.8.5/ /software/intel/parallel_studio_xe_2016_update3/mkl/lib/intel64/../lib64/ /software/git-2.10-el7-x86_64/lib64/x86_64-redhat-linux/4.8.5/ /software/git-2.10-el7-x86_64/lib64/../lib64/ /software/subversion-1.9.4-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/subversion-1.9.4-el7-x86_64/lib/../lib64/ /software/serf-1.3.9-el7-x86_64/lib/x86_64-redhat-linux/4.8.5/ /software/serf-1.3.9-el7-x86_64/lib/../lib64/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/lib/x86_64-redhat-linux/4.8.5/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/lib/../lib64/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../x86_64-redhat-linux/4.8.5/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/ /lib/x86_64-redhat-linux/4.8.5/ /lib/../lib64/ /usr/lib/x86_64-redhat-linux/4.8.5/ /usr/lib/../lib64/ /software/slurm-current-el7-x86_64/lib64/ /software/slurm-current-el7-x86_64/lib/ /software/python-2.7.12-el7-x86_64/lib/ /software/openmpi-2.0.1-el7-x86_64/lib/ /software/cuda-8.0-el7-x86_64/extras/CUPTI/lib64/ /usr/lib64/nvidia/ /software/cuda-8.0-el7-x86_64/lib64/ /software/intel/parallel_studio_xe_2016_update3/mkl/lib/intel64/ /software/git-2.10-el7-x86_64/lib64/ /software/subversion-1.9.4-el7-x86_64/lib/ /software/serf-1.3.9-el7-x86_64/lib/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../x86_64-redhat-linux/lib/ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../ /lib/ /usr/lib/"
 
 # Run-time system search path for libraries
-sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/x86_64-linux-gnu/libfakeroot /lib/i386-linux-gnu /usr/lib/i386-linux-gnu /lib/i686-linux-gnu /usr/lib/i686-linux-gnu /usr/lib/i386-linux-gnu/mesa /usr/local/lib /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/mesa-egl /usr/lib/x86_64-linux-gnu/mesa "
+sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib64/atlas /usr/lib64/mysql /usr/lib64/qt-3.3/lib /opt/Symantec/symantec_antivirus "
 
 # Fix the shell variable $srcfile for the compiler.
 fix_srcfile_path=""

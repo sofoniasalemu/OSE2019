@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "OSE_example.py", line 41, in <module>
+    import TasmanianSG
+  File "/home/rccguest2912/OSE2019/day1/SparseGridCode/analytical_examples/TASMANIAN_Python/TasmanianSG.py", line 34, in <module>
+    import numpy as np
+ImportError: No module named numpy

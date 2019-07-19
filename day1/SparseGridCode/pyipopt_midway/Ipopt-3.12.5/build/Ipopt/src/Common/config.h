@@ -5,7 +5,7 @@
 /* #undef BUILD_INEXACT */
 
 /* Define to be the name of C-function for Inf check */
-#define COIN_C_FINITE finite
+/* #undef COIN_C_FINITE */
 
 /* Define to 1 if the ASL package is available */
 #define COIN_HAS_ASL 1
@@ -88,7 +88,7 @@
 #define HAVE_DLFCN_H 1
 
 /* Define to 1 if function drand48 is available */
-#define HAVE_DRAND48 1
+/* #undef HAVE_DRAND48 */
 
 /* Define to 1 if you have the <float.h> header file. */
 /* #undef HAVE_FLOAT_H */
@@ -125,7 +125,7 @@
 /* #undef HAVE_PARDISO_PARALLEL */
 
 /* Define to 1 if function rand is available */
-#define HAVE_RAND 1
+/* #undef HAVE_RAND */
 
 /* Define to 1 if you have the `snprintf' function. */
 #define HAVE_SNPRINTF 1
@@ -146,7 +146,7 @@
 #define HAVE_STDLIB_H 1
 
 /* Define to 1 if function std::rand is available */
-#define HAVE_STD__RAND 1
+/* #undef HAVE_STD__RAND */
 
 /* Define to 1 if you have the <strings.h> header file. */
 #define HAVE_STRINGS_H 1
@@ -224,7 +224,7 @@
 #define SIZEOF_INT_P 8
 
 /* Define to 1 if you have the ANSI C header files. */
-/* #undef STDC_HEADERS */
+#define STDC_HEADERS 1
 
 /* Version number of package */
 #define VERSION "3.12.5"
