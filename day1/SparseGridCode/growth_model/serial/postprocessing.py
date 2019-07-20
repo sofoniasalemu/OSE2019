@@ -81,8 +81,8 @@ def adaptive_ls_error(n_agents, t1, t2, num_points):
         v_prev=TasmanianSG.TasmanianSparseGrid()
         v_next=TasmanianSG.TasmanianSparseGrid()
         
-        v_prev.read("valnew_1." + str(i) + ".txt")
-        v_next.read("valnew_1." + str(i+1) + ".txt")
+        v_prev.read("ad_valnew_1." + str(i) + ".txt")
+        v_next.read("ad_valnew_1." + str(i+1) + ".txt")
         
         diff=v_next.evaluateBatch(k_sample) - v_prev.evaluateBatch(k_sample)
         max_abs_diff=np.amax(np.fabs(diff))

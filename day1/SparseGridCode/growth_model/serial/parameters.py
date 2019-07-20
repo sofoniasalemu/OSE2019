@@ -23,9 +23,9 @@ numstart = 0   # which is iteration to start (numstart = 0: start from scratch, 
 numits = 10    # which is the iteration to end
 
 # How many random points for computing the errors
-No_samples = 1000
-refinement_level=2
-fTol=1e-3
+No_samples = 100
+refinement_level=4
+fTol=1e-5
 #====================================================================== 
 
 # Model Paramters
