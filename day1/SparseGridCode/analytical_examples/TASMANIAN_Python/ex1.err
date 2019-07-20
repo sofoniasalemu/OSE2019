@@ -1,0 +1,4 @@
+  File "ex1.py", line 51
+    for iK in range(iDepth)
+                          ^
+SyntaxError: invalid syntax

@@ -1,8 +1,8 @@
 #!/bin/bash -l
 #SBATCH --ntasks=1
-#SBATCH --output=test.out
-#SBATCH --error=test.err
+#SBATCH --output=ex1.out
+#SBATCH --error=ex1.err
 #SBATCH --partition=broadwl
 #SBATCH --job-name=test
-module load python/3.7.0
-python OSE_example.py
+module load python
+python ex1.py
