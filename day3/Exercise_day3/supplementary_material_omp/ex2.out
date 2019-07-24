@@ -1,0 +1,24 @@
+dot of vectors with length 100000000 with 1 threads
+dot product 2.5e+15 which matches the expected value 2.5e+15
+that took 0.853769 seconds
+dot of vectors with length 100000000 with 2 threads
+dot product 2.5e+15 which matches the expected value 2.5e+15
+that took 0.703763 seconds
+dot of vectors with length 100000000 with 3 threads
+dot product 2.5e+15 which matches the expected value 2.5e+15
+that took 0.703355 seconds
+dot of vectors with length 100000000 with 4 threads
+dot product 2.5e+15 which matches the expected value 2.5e+15
+that took 0.704419 seconds
+dot of vectors with length 100000000 with 5 threads
+dot product 2.5e+15 which matches the expected value 2.5e+15
+that took 0.816536 seconds
+dot of vectors with length 100000000 with 6 threads
+dot product 2.5e+15 which matches the expected value 2.5e+15
+that took 0.703857 seconds
+dot of vectors with length 100000000 with 7 threads
+dot product 2.5e+15 which matches the expected value 2.5e+15
+that took 0.704009 seconds
+dot of vectors with length 100000000 with 8 threads
+dot product 2.5e+15 which matches the expected value 2.5e+15
+that took 0.703937 seconds

@@ -19,7 +19,7 @@ int main(void){
 
     double time = -omp_get_wtime();
     double dot=0.;
-
+    #pragma omp parallel for reduction(+:dot)
     for(int i=0; i<N; i++) {
         dot += a[i] * b[i];
     }

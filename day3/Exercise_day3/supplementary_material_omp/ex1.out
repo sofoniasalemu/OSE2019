@@ -1,0 +1,18 @@
+serial error   : 1.54987e-13
+parallel error : inf
+8 threads
+serial     : 0.262595 seconds	parallel   : 0.274158 seconds
+speedup    : 0.957822
+efficiency : 0.119728
+serial error   : 1.54987e-13
+parallel error : inf
+16 threads
+serial     : 0.282837 seconds	parallel   : 0.274832 seconds
+speedup    : 1.02913
+efficiency : 0.0643204
+serial error   : 1.54987e-13
+parallel error : inf
+32 threads
+serial     : 0.283053 seconds	parallel   : 0.276426 seconds
+speedup    : 1.02397
+efficiency : 0.0319992
