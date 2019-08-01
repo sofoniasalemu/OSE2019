@@ -22,36 +22,33 @@ void initialize(double *v, int n){
 
 
 void normalize_vector(double *v, int n){
-    double norm = 0.;
+    double norm1 = 0.;
 
     // compute the norm of v
     for(int i=0; i<n; i++)
-        norm += v[i]*v[i];
-    norm = sqrt(norm);
+        norm1 += v[i]*v[i];
+    norm1 = sqrt(norm1);
 
     // normalize v
     for(int i=0; i<n; i++)
-        v[i] /= norm;
+        v[i] /= norm1;
 }
 
 void normalize_vector_omp(double *v, int n)
 {
-    double norm = 0.;
+    
     double norm1 = 0.;
-    double nor = 0.;
-    // compute the norm of v
+        // compute the norm of v
     #pragma omp parallel for reduction(+:norm1)
-    for(int i=0; i<n; i++)
-    {
-       	norm += v[i]*v[i];    	  
+    for(int i=0; i<n; i++){
+       	norm1 += v[i]*v[i];    	  
     }
 
-    nor=sqrt(nor);
+    norm1=sqrt(norm1);
     // normalize v
     #pragma omp parallel for
-    	for(int i=0; i<n; i++)
-        {
-		v[i] /= nor;
+    	for(int i=0; i<n; i++){
+		v[i] /= norm1;
 	}
 }
 
@@ -70,6 +67,8 @@ int main( void ){
     std::cout << "serial error   : " << fabs(norm(v,N) - 1.) << std::endl;
 
     int max_threads = omp_get_max_threads();
+    omp_set_num_threads(max_threads);
+    int num_threads = omp_get_num_threads();
     initialize(v, N);
     double time_parallel = -omp_get_wtime();
     normalize_vector_omp(v, N);
@@ -77,8 +76,8 @@ int main( void ){
 
     // chck the answer
     std::cout << "parallel error : " << fabs(norm(v,N) - 1.) << std::endl;
-
-    std::cout << max_threads     << " threads" << std::endl;
+    std::cout << num_threads     << "num threads"<< std::endl;
+    std::cout << max_threads     << "max threads" << std::endl;
     std::cout << "serial     : " << time_serial << " seconds\t"
               << "parallel   : " << time_parallel <<  " seconds" << std::endl;
     std::cout << "speedup    : " << time_serial/time_parallel << std::endl;

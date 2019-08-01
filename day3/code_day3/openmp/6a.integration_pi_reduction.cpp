@@ -16,13 +16,13 @@ int main( void ){
     int i;
     double sum = 0.0;
     double pi  = 0.0;
-
-    std::cout << "using " << omp_get_max_threads() << " OpenMP threads" << std::endl;
+    omp_set_num_threads(8);
+    std::cout << "using " << omp_get_num_threads() << " OpenMP threads" << std::endl;
 
     const double w = 1.0/double(num_steps);
 
     double time = -omp_get_wtime();
-
+    
     #pragma omp parallel for reduction(+:sum)
     for(int i=0; i<num_steps; ++i) {
         double x = (i+0.5)*w;

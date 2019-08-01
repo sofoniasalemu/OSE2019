@@ -1,18 +1,21 @@
 serial error   : 1.54987e-13
-parallel error : inf
-8 threads
-serial     : 0.262595 seconds	parallel   : 0.274158 seconds
-speedup    : 0.957822
-efficiency : 0.119728
+parallel error : 1.67644e-14
+1num threads
+8max threads
+serial     : 0.327875 seconds	parallel   : 0.28832 seconds
+speedup    : 1.13719
+efficiency : 0.142149
 serial error   : 1.54987e-13
-parallel error : inf
-16 threads
-serial     : 0.282837 seconds	parallel   : 0.274832 seconds
-speedup    : 1.02913
-efficiency : 0.0643204
+parallel error : 3.66374e-14
+1num threads
+16max threads
+serial     : 0.303518 seconds	parallel   : 0.294793 seconds
+speedup    : 1.0296
+efficiency : 0.0643498
 serial error   : 1.54987e-13
-parallel error : inf
-32 threads
-serial     : 0.283053 seconds	parallel   : 0.276426 seconds
-speedup    : 1.02397
-efficiency : 0.0319992
+parallel error : 2.83107e-14
+1num threads
+32max threads
+serial     : 0.311768 seconds	parallel   : 0.289732 seconds
+speedup    : 1.07606
+efficiency : 0.0336268

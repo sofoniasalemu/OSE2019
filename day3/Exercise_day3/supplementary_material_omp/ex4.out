@@ -1,0 +1,36 @@
+number of threads: 8
+Number of Paths: 100000000
+Underlying:      100
+Strike:          100
+Risk-Free Rate:  0.05
+Volatility:      0.2
+Maturity:        1
+Call Price:      10.4491
+Call-time elapsed: 14.2723
+Put Price:       5.57258
+Put-time elapsed: 14.2523
+
+number of threads: 16
+Number of Paths: 100000000
+Underlying:      100
+Strike:          100
+Risk-Free Rate:  0.05
+Volatility:      0.2
+Maturity:        1
+Call Price:      10.4521
+Call-time elapsed: 14.2528
+Put Price:       5.57351
+Put-time elapsed: 14.2583
+
+number of threads: 24
+Number of Paths: 100000000
+Underlying:      100
+Strike:          100
+Risk-Free Rate:  0.05
+Volatility:      0.2
+Maturity:        1
+Call Price:      10.4523
+Call-time elapsed: 14.2595
+Put Price:       5.57322
+Put-time elapsed: 14.2657
+

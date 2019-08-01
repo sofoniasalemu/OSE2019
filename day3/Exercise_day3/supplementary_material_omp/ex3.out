@@ -1,6 +1,9 @@
 Number of threads: 1
-that took 0.000190697seconds
-Number of threads: 1
-that took 0.000376924seconds
-Number of threads: 1
-that took 0.000665495seconds
+Pi: 3.200000
+that took 4.4045e-05seconds
+Number of threads: 8
+Pi: 3.200000
+that took 0.00023223seconds
+Number of threads: 16
+Pi: 3.200000
+that took 0.000420182seconds

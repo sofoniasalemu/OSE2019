@@ -1,0 +1,36 @@
+Number of Paths: 100000
+Underlying:      100
+Strike:          100
+Risk-Free Rate:  0.05
+Volatility:      0.2
+Maturity:        10
+
+Asian call price: 19.6708computed in 0.122939seconds
+Asian call price (paral): 19.5261computed in 0.122849seconds
+
+Asian put price:3.5167computed in 0.119292seconds
+Asian put price (paral):3.59144computed in 0.122656seconds
+Number of Paths: 100000
+Underlying:      100
+Strike:          100
+Risk-Free Rate:  0.05
+Volatility:      0.2
+Maturity:        10
+
+Asian call price: 19.6708computed in 0.119578seconds
+Asian call price (paral): 19.5907computed in 0.123484seconds
+
+Asian put price:3.5167computed in 0.119422seconds
+Asian put price (paral):3.55767computed in 0.122965seconds
+Number of Paths: 100000
+Underlying:      100
+Strike:          100
+Risk-Free Rate:  0.05
+Volatility:      0.2
+Maturity:        10
+
+Asian call price: 19.6708computed in 0.119875seconds
+Asian call price (paral): 19.621computed in 0.12369seconds
+
+Asian put price:3.5167computed in 0.120101seconds
+Asian put price (paral):3.56535computed in 0.123598seconds

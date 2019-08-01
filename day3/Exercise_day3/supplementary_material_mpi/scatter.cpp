@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[])
 {
-    int i, rank, size, senddata[20], receivedata;
+    int i, rank, size, senddata[20], receivedata[5];
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
@@ -16,13 +16,13 @@ int main(int argc, char *argv[])
     }
     if (rank==0) {
         for (i=0; i<size; i++) {
-            printf("enter a value:\n");
-            fflush(stdout);
-            scanf ("%d",&senddata[i]);
+            senddata[i]=2;
         }
     }
 
     /* scatter the value of senddata of rank 0 to receivedata of all ranks */
+
+    MPI_Scatter(&senddata,5,MPI_INT,&receivedata, 5,MPI_INT,0,MPI_COMM_WORLD);    
 
     printf("I am rank %i and the value is %i\n", rank, receivedata);
     MPI_Finalize();

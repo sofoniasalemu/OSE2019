@@ -10,7 +10,7 @@ int main(void)
     int count=0;
     double z;
     double pi;
-    int num_threads =1;// omp_get_max_threads();
+    int num_threads = omp_get_max_threads();
     std::cout << "Number of threads: "<< num_threads << std::endl;
     double time = -omp_get_wtime();
     //srand(time(NULL));
@@ -28,7 +28,7 @@ int main(void)
         }
     }
     pi = ((double)count/(double)niter)*4.0;          //p = 4(m/n)
-    //printf("Pi: %f\n", pi);
+    printf("Pi: %f\n", pi);
     time += omp_get_wtime();
     std::cout << "that took "<< time << "seconds"<<std::endl;
 }

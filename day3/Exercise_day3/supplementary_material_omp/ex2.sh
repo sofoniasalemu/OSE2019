@@ -1,8 +1,8 @@
 #!/bin/bash -l
 #SBATCH --error=ex2.err
 #SBATCH --output=ex2.out
-#SBATHC --partition=broadwl
-g++ dot_prod.cpp -fopenmp -o dot_prod.exec
+#SBATCH --partition=broadwl
+##g++ dot_prod.cpp -fopenmp -o dot_prod.exec
 export OMP_NUM_THREADS=1
 ./dot_prod.exec
 export OMP_NUM_THREADS=2
